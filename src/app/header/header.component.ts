@@ -13,7 +13,7 @@ export class HeaderComponent {
   navLinks = [
     { path: "/", label: "About" },
     { path: '/pricing', label: 'Pricing' },
-    { path: '/services', label: 'Services' }
+    // { path: '/services', label: 'Services' }
   ];
   
   get isOddIndexPage(): boolean {
