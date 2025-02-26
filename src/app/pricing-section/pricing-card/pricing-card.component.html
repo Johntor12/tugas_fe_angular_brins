@@ -1,0 +1,21 @@
+<div class="card-container-odd" [ngClass]="getCardContainerColor(index)">
+  <div class="card-title" [ngClass]="getCardTitleColor(index)">
+    <p>
+      {{ title.toUpperCase() }}
+    </p>
+  </div>
+  <div
+    class="card-desc"
+    [ngClass]="getCardPriceColor(index)"
+    [ngClass]="
+      isOdd(index) ? 'card-desc-caption-odd' : 'card-desc-caption-even'
+    "
+  >
+    <div>{{ price }}</div>
+    <div>
+      <div class="card-desc-caption" *ngFor="let descItems of desc">
+        {{ descItems }}
+      </div>
+    </div>
+  </div>
+</div>

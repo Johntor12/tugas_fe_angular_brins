@@ -1,0 +1,18 @@
+<section class="pricing-section">
+  <div class="container-pricing">
+    <div class="container-row-text">
+      <p class="text-our">Our</p>
+      <p class="text-pricing">Pricing</p>
+    </div>
+    <p class="text-penawaran-pricing">Penawaran terbaik untuk anda</p>
+    <div class="card-row-container">
+      <app-pricing-card
+        *ngFor="let item of pricingPlans; let i = index"
+        [index]="i"
+        [title]="item.title"
+        [price]="item.price"
+        [desc]="item.desc"
+      ></app-pricing-card>
+    </div>
+  </div>
+</section>

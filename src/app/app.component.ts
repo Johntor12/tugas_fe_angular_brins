@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `<app-header></app-header>
+              <main>
+                <router-outlet></router-outlet>
+              </main>
+              <app-footer></app-footer>`,
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {

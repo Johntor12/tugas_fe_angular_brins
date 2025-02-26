@@ -1,0 +1,31 @@
+<router-outlet></router-outlet>
+
+<nav class="navbar sticky-top">
+  <div class="container">
+    <a
+      class="navbar-brand"
+      href="#"
+      [ngStyle]="{ color: isSpecialPage ? '#5385FF' : '#FFFFFF' }"
+    >
+      <a class="navbar-text-design">BRINS</a>
+      <a class="">Website</a>
+    </a>
+
+    <ul class="nav">
+      <li class="nav-item" *ngFor="let link of navLinks">
+        <a
+          class="nav-link"
+          [routerLink]="link.path"
+          [attr.href]="link.path"
+          [ngClass]="{
+            'blue-text': isSpecialPage,
+            'white-text': !isSpecialPage
+          }"
+          >{{ link.label }}</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,20 @@
+[
+    { "title": "Basic", "price": "20k/project", "desc": [
+        "10 Graphic Content",
+        "Design Theme",
+        "5 Photo Product"
+    ]},
+    { "title": "Standard", "price": "30k/project", "desc": [
+        "15 Graphic Content",
+        "Design Theme",
+        "5 Photo Product",
+        "Caption & Hashtag"
+    ]},
+    { "title": "Premium", "price": "50k/project", "desc": [
+        "25 Graphic Content",
+        "Design Theme",
+        "10 Photo & Video",
+        "Caption & Hashtag",
+        "Web Landing Page"
+    ]}
+]
